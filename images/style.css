@@ -1,0 +1,94 @@
+body {
+    font-family: 'Norican', cursive;
+    background-color: rgb(33, 154, 198);
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    color: #94daf3;
+    font-size: 3rem;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* background-color: #00000032; */
+    border-radius: 7.5px;
+    z-index: 1;
+}
+
+h2 {
+    margin: -10px auto;
+    text-align: center;
+    color: #94daf3;
+    font-size: 3rem;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* background-color: #00000032; */
+    border-radius: 7.5px;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 8rem; 
+}
+
+.Hotdog { 
+    text-align: right; 
+}
+
+.Sloppyjoe { 
+    text-align: left;
+}
+
+.Beerfish { 
+    text-align: left;
+}
+
+.Beefstew { 
+    text-align: right;
+}
+
+.Udon { 
+    text-align: center;
+    margin-top: 15rem;
+}
+.Scotcheggs {
+    text-align: center; 
+    margin-top: 15rem; 
+}
+
+.Friedrice {
+    text-align: center; 
+    margin-top: 15rem; 
+}
+
+img {
+    width: 180px;
+}
+
+button {
+    display: block; 
+    margin: 0 auto; 
+}
+
+span.day {
+    display: flex;
+    margin-left: 4rem;
+    color: #d8eff7d4;
+    font-size: 1.75rem;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* background: #00000032; */
+    border-radius: 7.5px;
+}
