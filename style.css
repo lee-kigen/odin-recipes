@@ -1,5 +1,5 @@
 body {
-    font-family: 'Norican', cursive;
+    font-family: 'Agbalumo';
     background-color: rgb(33, 154, 198);
 }
 
@@ -77,6 +77,19 @@ img {
 button {
     display: block; 
     margin: 0 auto; 
+    border: none;
+    background: #00000032;
+    border-radius: 6px;
+    transition: 0.2s;
+    font-family:  'Norican', cursive;
+    font-size: 16px;
+    padding: 5px 5px;
+    color: #000000a7;
+}
+
+button:hover {
+    box-shadow: 0 0 0 4px rgb(33, 154, 198), 0 0 0 8px #00000032;
+    cursor: pointer;
 }
 
 span.day {
