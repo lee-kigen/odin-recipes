@@ -1,107 +1,80 @@
 body {
-    font-family: 'Agbalumo';
+    font-family: 'Agbalumo', sans-serif;
     background-color: rgb(33, 154, 198);
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    margin: auto;
-    text-align: center;
+h1, h2 {
     color: #94daf3;
-    font-size: 3rem;
-    box-sizing: border-box;
+    font-size: 2.5rem;
+    margin: 10px auto;
     width: fit-content;
-    height: fit-content;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* background-color: #00000032; */
+    padding: 10px 15px;
     border-radius: 7.5px;
-    z-index: 1;
-}
-
-h2 {
-    margin: -10px auto;
-    text-align: center;
-    color: #94daf3;
-    font-size: 3rem;
-    box-sizing: border-box;
-    width: fit-content;
-    height: fit-content;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* background-color: #00000032; */
-    border-radius: 7.5px;
-    z-index: 2;
 }
 
 .container {
-    position: relative;
     display: flex;
-    justify-content: space-between; 
-    margin: 20px 8rem; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.Hotdog { 
-    text-align: right; 
-}
-
-.Sloppyjoe { 
-    text-align: left;
-}
-
-.Beerfish { 
-    text-align: left;
-}
-
-.Beefstew { 
-    text-align: right;
-}
-
-.Udon { 
+.recipe {
     text-align: center;
-    margin-top: 15rem;
-}
-.Scotcheggs {
-    text-align: center; 
-    margin-top: 15rem; 
-}
-
-.Friedrice {
-    text-align: center; 
-    margin-top: 15rem; 
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
 }
 
 img {
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
 }
 
 button {
-    display: block; 
-    margin: 0 auto; 
+    display: block;
+    width: 100%;
+    margin-top: 10px;
     border: none;
-    background: #00000032;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     transition: 0.2s;
-    font-family:  'Norican', cursive;
+    font-family: 'Norican', cursive;
     font-size: 16px;
-    padding: 5px 5px;
+    padding: 8px;
     color: #000000a7;
 }
 
 button:hover {
-    box-shadow: 0 0 0 4px rgb(33, 154, 198), 0 0 0 8px #00000032;
+    box-shadow: 0 0 0 4px rgb(33, 154, 198), 0 0 0 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
 span.day {
-    display: flex;
-    margin-left: 4rem;
+    display: block;
     color: #d8eff7d4;
-    font-size: 1.75rem;
-    box-sizing: border-box;
-    width: fit-content;
-    height: fit-content;
-    padding-left: 8px;
-    padding-right: 8px;
-    /* background: #00000032; */
-    border-radius: 7.5px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    .recipe {
+        width: 90%;
+    }
 }
